@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <!-- <script src="https://debug.dhis2.org/2.35.0/dhis-web-maps/map.js" ></script> -->
+        <script src="https://unpkg.com/htm@2.2.1" crossorigin></script>
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js')
+                .then(function(registration) {
+                    console.log('Registration successful, scope is:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('Service worker registration failed, error:', error);
+                });
+
+                navigator.serviceWorker.register('/app/sw2.js');
+            }
+        </script>
+    </head>
+    <body>
+        <div width="640" height="480" id="target"></div>
+        <script type="module" src="./test.js"></script>
+    </body>
+</html>
+
+<!-- // 

@@ -1,0 +1,2 @@
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):(e=e||self).reactPlugin=n()}(this,function(){var e=React.useEffect;return function(n){var t=n.data,o=n.onLoaded;return e(function(){console.log("rendering additional things..."),setTimeout(o,1e3)},[]),console.log("render"),React.createElement("h1",null,"Hello ",t.me.displayName)}});
+//# sourceMappingURL=lib.umd.js.map

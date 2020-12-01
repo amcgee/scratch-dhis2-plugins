@@ -1,0 +1,19 @@
+{
+  "name": "@dhis2-internal/react-plugin",
+  "version": "1.0.0",
+  "source": "index.js",
+  "main": "dist/lib.js",
+  "module": "dist/lib.module.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "microbundle": "^0.12.4"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "watch": "microbundle watch"
+  }
+}
